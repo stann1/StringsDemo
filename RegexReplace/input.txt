@@ -1,0 +1,1 @@
+﻿Replace all 'test' occurances with testsomething, only if wordtest is a testprefix or a suffix test.
