@@ -10,9 +10,9 @@ namespace RegexMatches
     {
         static void Main(string[] args)
         {
-            string[] allWords = File.ReadAllLines(Path.Join(@"../../../","words.txt"));
+            string[] allWords = File.ReadAllLines(Path.Join(AppContext.BaseDirectory, "../../../","words.txt"));
 
-            using (var reader = new StreamReader(Path.Join(@"../../../", "input.txt")))
+            using (var reader = new StreamReader(Path.Join(AppContext.BaseDirectory, "../../../", "input.txt")))
             {
                 string line = reader.ReadLine();
                 var dict = new Dictionary<string, int>();

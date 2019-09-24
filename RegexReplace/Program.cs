@@ -14,7 +14,7 @@ namespace RegexReplace
             Console.WriteLine(result);
 
             // replace all 'test' strings from a text file, if the 'test' word is a prefix or a suffix
-            using (var reader = new StreamReader(Path.Join(@"../../../", "input.txt")))
+            using (var reader = new StreamReader(Path.Join(AppContext.BaseDirectory, "../../../", "input.txt")))
             {
                 string line = reader.ReadLine();
                 while (line != null)
